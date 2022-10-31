@@ -1,4 +1,4 @@
-export default class Snake {
+        export default class Snake {
     rotateX = 0;
     rotateY = 1;
     acceptInput = true;
