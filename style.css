@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('press-start-2p.woff2') format('woff2'), url('press-start-2p.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(to bottom right, #1a1a1a, #333333);
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+#canvas {
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+}
+
+#canvas:hover {
+    transform: scale(1.1);
+}

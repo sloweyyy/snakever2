@@ -1,10 +1,36 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Snake Game</title>
-    </head>
 
-    <body>
-        <canvas id="canvas" width="400" height="400"></canvas>
-        <script src="game.js"></script>
-    </body>
+<head>
+    <title>Snake Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #1a1a1a, #333333);
+            margin: 0;
+            padding: 0;
+            font-family: 'Press Start 2P', sans-serif;
+        }
+        
+        #canvas {
+            display: block;
+            margin: auto;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        #canvas:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script src="game.js"></script>
+
+</body>
+
 </html>
